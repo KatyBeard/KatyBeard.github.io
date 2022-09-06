@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет студента</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <!-- <div class="section">
+                <div class="container">
+                    <div class="row justify-content-end g-0">
+                    <!-- <div class="col-lg-6"> ->
+                        <div class="col-2">
+                            <a class="visibility_btn" href="#">Версия для слабовидящих</a>
+                        </div>
+                        <div class="col-2">
+                            <a href="#" class="notification_btn"></a>
+                            <a href="#" class="notify_btn"></a>
+                            <a href="#" class="messages_btn"></a>
+                            <a href="#" class="news_btn"></a>
+                        </div>
+                        <div class="col-2">
+                            <a href="#" class="user">Иванов Д.Д.</a> <!-- Вставить ссылку ->
+                        </div>
+                    <!-- </div> ->
+                </div>
+                </div>
+            </div> -->
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-12 icon_header">
+                        <div class="col-xs-8">
+                            <a href="#" class="user">Иванов Д.Д.</a> <!-- Вставить ссылку -->
+                            <!-- <select class="user" name="" id="">
+                    <option value="FIO">Иванов Д.Д.</option>
+                </select> -->
+                            <a href="#" class="notification_btn"></a>
+                            <a href="#" class="notify_btn"></a>
+                            <a href="#" class="messages_btn"></a>
+                            <a href="#" class="news_btn"></a>
+                        </div>
+                        <!-- <button class="notification_btn"></button>
+                <button class="notify_btn"></button>
+                <button class="messages_btn"></button>
+                <button class="news_btn"></button> -->
+                        <div class="col-xs-3">
+                            <a class="visibility_btn" href="#">Версия для слабовидящих</a>
+                        </div>
+                        <div class="col-xs-1">
+                        <a href="#" class="menu_btn"> </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <!-- <a href="#" class="menu_btn"> </a> -->
+            <div class="button_search">
+                <form action="" method="get">
+                    <input type="search" placeholder="Поиск...">
+                    <button type="submit"></button>
+                </form>
+            </div>
+            <nav class="menu_list">
+                <ul>
+                    <li><a href="#" class="inf active_page">Информация</a></li>
+                    <li><a href="#" class="olympiad">Олимпиада</a></li>
+                    <li><a href="#" class="dean">Единый деканат</a></li>
+                    <li><a href="#" class="certification">Аттестация</a></li>
+                    <li><a href="#" class="schedule">Расписание</a>
+                        <ul>
+                            <li><a href="#" class="classes">Занятия и сессии</a></li>
+                            <li><a href="#" class="mobile_v">Мобильная версия</a></li>
+                            <li><a href="#" class="session">Сессия</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="dist_education">Дистанционное обучение</a>
+                        <ul>
+                            <li><a href="#" class="file">Файлы</a></li>
+                            <li><a href="#" class="tasks">Задания</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="add_courses">Дополнительные курсы</a></li>
+                    <li><a href="#" class="help_systems">Справочные системы</a></li>
+                    <li><a href="#" class="events">События</a></li>
+                    <li><a href="#" class="off_campus_sch">Расписание оффлайн-кампуса</a></li>
+                    <li><a href="#" class="education">Обучение</a>
+                        <ul>
+                            <li><a href="#" class="program">Программа</a></li>
+                            <li><a href="#" class="academic_per">Успеваемость</a></li>
+                            <li><a href="#" class="portfolio">Портфолио</a></li>
+                            <li><a href="#" class="document">Документы</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="communication">Общение</a>
+                        <ul>
+                            <li><a href="#" class="write_mes">Написать сообщение</a></li>
+                            <li><a href="#" class="all_corresp">Вся переписка (51/501)</a></li>
+                            <li><a href="#" class="tasks">Задания (0/1)</a></li>
+                            <li><a href="#" class="unread">Непрочитанные (51)</a></li>
+                            <li><a href="#" class="my_mark">Мои закладки (0)</a></li>
+                            <li><a href="#" class="my_delet">Мои удаленные (3)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="settings">Настройки</i></a>
+                        <ul>
+                            <li><a href="#" class="video">Видео запись</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="intern">Стажировки/практики</a></li>
+                    <li><a href="#" class="mail">Почта</a></li>
+                    <li><a href="#" class="teams">Teams</a></li>
+                    <li><a href="#" class="exit">Выйти</a></li>
+                </ul>
+                <!-- <a href="#" class="inf">Информация</a>
+                <!-- <div class="inf_btn">
+                <a href="">Первая категория</a>
+                <a href="">Вторая категория</a>
+            </div>
+                <!-- <div class="olympiad_btn">
+                <a href="#" class="olympiad">Олимпиада</a>
+                <!-- </div> 
+                <!-- <div class="dean_btn"> 
+                <a href="#" class="dean">Единый деканат</a>
+                <!-- </div> 
+                <a href="#" class="certification">Аттестация</a>
+
+                <a href="#" class="schedule">Расписание</a>
+                <a href="#" class="dist_education">Дистанционное обучение</a>
+                <a href="#" class="add_courses">Дополнительные курсы</a>
+                <a href="#" class="help_systems">Справочные системы</a>
+                <a href="#" class="events">События</a>
+                <a href="#" class="off_campus_sch">Расписание оффлайн-кампуса</a>
+                <a href="#" class="education">Обучение</a>
+                <a href="#" class="communication">Общение</a>
+                <a href="#" class="settings">Настройки<script src="js/menu_btn.js"></script></a>
+                <ul class="submenu">
+                    <li><a href="#" class="video">Видео запись</a></li>
+                </ul>
+                <!-- <a href="#" class="settings_btn">
+                    <script src="js/menu_btn.js"></script>
+                </a> -->
+                <!-- <div class="submenu">
+                    <a href="#" class="video">Видео запись</a>
+                </div> 
+                <a href="#" class="intern">Стажировки/практики</a>
+                <a href="#" class="mail">Почта</a>
+                <a href="#" class="teams">Teams</a>
+                <a href="#" class="exit">Выйти</a> -->
+
+            </nav>
+        </div>
+        <!-- <div class="content">
+            <div class="users">
+                <h2>Информация о студенте</h2>
+                <div class="inf_users">
+                    <span>Иванов Д.Д.</span>
+                    <p>Менеджмент организаций топливно-энергетического <br> комплекса</p>
+                    <p>Очная форма обучения</p>
+                </div>
+            </div>
+            <div class="section">
+                <h3 class="feature_header">Рейтинг</h3>
+                <div class="feature">
+                    <div class="col">
+                        <a href="#">1-5</a>
+                        <p>по группе</p>
+                    </div>
+                    <div class="col">
+                        <a href="#">1-167</a>
+                        <p>по курсу</p>
+                    </div>
+                    <div class="col">
+                        <a href="#">1-90</a>
+                        <p>по институту</p>
+                    </div>
+                    <div class="col">
+                        <a href="#">1-674</a>
+                        <p>по факту</p>
+                    </div>
+                    <div class="col">
+                        <a href="#">5</a>
+                        <p>средний балл</p>
+                    </div>
+                </div>
+            </div> -->
+        <div class="content">
+            <div class="section">
+                <div class="container">
+                    <!-- Первый row (строка) под заголовок -->
+                    <div class="row">
+                        <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12 col-xl-12 col-xxl-12">
+                            <h2 class="header_user">Информация о студенте</h2>
+                        </div>
+                    </div>
+                    <!-- Второй row (строка) под данные user -->
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                            <div class="inf_users">
+                                <p class="FIO">Иванов Д.Д.</p>
+                                <p>Менеджмент организаций топливно-энергетического <br> комплекса</p>
+                                <p>Очная форма обучения</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- блок с рейтингом, Линия -->
+            <div class="section">
+                <div class="container">
+                    <!-- row под заголовок секции -->
+                    <div class="row">
+                        <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12 col-xl-12 col-xxl-12">
+                            <h4 class="text-center">Рейтинг</h4>
+                        </div>
+                    </div>
+                    <!-- блок с рейтингом -->
+                    <div class="top text-center">
+                        <div class="row justify-content-evenly">
+                            <div class="col-4 col-md-2">
+                                <div class="top_box">
+                                    <a href="#" class="fw-bold">1-5</a>
+                                    <p class="text-uppercase">по группе</p>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <div class="top_box">
+                                    <a href="#" class="fw-bold">1-167</a>
+                                    <p class="text-uppercase">по курсу</p>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <div class="top_box">
+                                    <a href="#" class="fw-bold">1-90</a>
+                                    <p class="text-uppercase">по институту</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <div class="top_box">
+                                    <a href="#" class="fw-bold">1-674</a>
+                                    <p class="text-uppercase">по факту</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <div class="top_box">
+                                    <a href="#" class="fw-bold">5</a>
+                                    <p class="text-uppercase">средний балл</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Линия -->
+                    <div class="col-lg-10 offset-lg-1 line"></div>
+                </div>
+            </div>
+            <!-- Информация о студенте, Линия -->
+            <div class="section">
+                <div class="container">
+                    <!-- Информация о студенте -->
+                    <div class="col-lg-8 offset-lg-1 inf_student">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td class="col_table px-4 nmb_card">Номер зачетной книжки</td>
+                                    <td>Счастливый</td>
+                                </tr>
+                                <tr>
+                                    <td class="col_table px-4 status">Статус</td>
+                                    <td>Учится</td>
+                                </tr>
+                                <tr>
+                                    <td class="col_table px-4 financing">Вид финансирования</td>
+                                    <td>С оплатой обучения (С полным возмещением стоимости обучения)</td>
+                                </tr>
+                                <tr>
+                                    <td class="col_table px-4 institute">Институт</td>
+                                    <td>Институт отраслевого менеджмента</td>
+                                </tr>
+                                <tr>
+                                    <td class="col_table px-4 course">Курс</td>
+                                    <td>3 (семестр 5)</td>
+                                </tr>
+                                <tr>
+                                    <td class="col_table px-4 education_lvl">Уровень образования</td>
+                                    <td>Бакалавр (4 года)</td>
+                                </tr>
+                                <tr>
+                                    <td class="col_table px-4 area">Направление</td>
+                                    <td>Менеджмент</td>
+                                </tr>
+                                <tr>
+                                    <td class="col_table px-4 education_pgm">Образовательная программа</td>
+                                    <td>Менеджмент организаций топливно-энергетического комплекса</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <!-- Линия -->
+                    <div class="col-lg-10 offset-lg-1 line"></div>
+                </div>
+            </div>
+            <!-- Документы абитуриента -->
+            <div class="section">
+                <div class="container">
+                    <div class="col-lg-8 offset-lg-1 ">
+                        <p class="document-name">Документы договора абитуриента (начиная с 2019)</p>
+                        <table class="table caption-top table-borderless document_student">
+                            <thead>
+                                <tr>
+                                    <th>Название/Скачать</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Ничего не найдено</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/menu_btn.js"></script>
+</body>
+
+</html>
